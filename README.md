@@ -1,6 +1,7 @@
 # TrackerGPSArduinoNano V1
+Je débute dans la création d'objet connecté et j'aimerai partager ma création avec tout les bug qu'il comporte :) !
 
- Tracker GPS/ mouchard (Version carte micro SD) pour  arduino nano AT328P
+Tracker GPS/ mouchard (Version carte micro SD) pour  arduino nano AT328P
  ```
 Version 1 :avec lecteur SD
 Version 2 : avec Puce GSM
@@ -10,20 +11,22 @@ Version 2 : avec Puce GSM
 
 ## Bien commencer
 
-Ce programme a été codé sous l'arduino IDE utilisant des librarie open sources.
+Ce programme a été codé sous l'arduino IDE utilisant des libraries open sources.
 je prepare une vidéo youtube pour expliquer certain details du code, hardware mais aussi du boitier imprimer en 3D.
-Voici un schema simple de fonctionnement:
-•initialisation du CPU
-•Allumage GPS
-•Phase recuperation Postion GPS
-•Ecriture données au format .GPX sur la carte SD
-•Eteint GPS
-•CPU en mode Sleep
-•Attente de 10 minute avant reveil et  allumage GPS ,CPU et recuperation d'un nouveau signal.
+Voici un schéma simple de fonctionnement:
+
+
+* 1 initialisation du CPU
+* 2 Allumage GPS
+* 3 Phase récuperation position GPS
+* 4 Ecriture données au format .GPX sur la carte SD
+* 5 Eteint GPS
+* 6 CPU en mode Sleep
+* 8 Reveil et boucle -> 1
 
 Afin de ne pas vider la batterie en 2 heures , Des fonction de sauvegarde de battery on été ajouté comme le temps maximun de 15sec d'allumage du GPS ( cas blocqué sous un tunnel).
-je vous invite a venire regardermin tuto en français sur ce projet...
-et je prepare la Version 2 avec puce GSM.
+je vous invite a venir regarder mon tuto en français sur ce projet...
+et je prépare la Version 2 avec puce GSM.
 
 ### Requis Logiciel
 * [Arduino IDE](https://www.arduino.cc) - arduino IDE
@@ -44,7 +47,7 @@ Batterie(1000maH recommandé)
 Controlleur charge baterrie
 
 
-### Schéma électronoque et cablage
+### Schéma électronique et cablages
 
 
 ```
@@ -53,8 +56,9 @@ Ca arrive
 
 
 ## Tests
-en cas d'erreur ( access SD) la led Pin 13 clignotera rapidement et le programme stopera.
 
+
+en cas d'erreur ( access SD) la led Pin 13 clignotera rapidement et le programme stopera.
 
 
 ## Deployment
@@ -66,7 +70,22 @@ Add additional notes about how to deploy this on a live system
 
 * Gestion date des fichier GPX
 
-## Consommation et baterrie
+## Consommation et batterie
+
+Mode actif: 
+```
+ Arduino : 15mAh 
+ Gps: 65 mAh
+ carte sd: 0.3 mA
+```
+
+
+Mode Sleep: 
+```
+ Arduino : 3mAh 
+ Gps: 0 mAh
+ lecteur micro sd: 0.3 mA(pas de mode sleep dans cette version)
+```
 
 Batterie 1000mAh:
 
@@ -81,7 +100,7 @@ Toutes contribution est la bienvenue sur ce projet.
 
 ## Auteur
 
-* **Djamal Guellati** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Djamal Guellati** - *Initial work* - [Defdjamel](https://github.com/Defdjamel)
 
  list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
