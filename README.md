@@ -1,11 +1,16 @@
 # TrackerGPSArduinoNano V1
-Je débute dans la création d'objet connecté et j'aimerai partager ma création avec tout les bug qu'il comporte :) !
+Je débute dans la création d'objets connectés et j'aimerai partager ma création avec tout les bugs qu'il comporte :) !
 
+Toutes contributions , commentaires sont les bienvenus !
+
+ 
 Tracker GPS/ mouchard (Version carte micro SD) pour  arduino nano AT328P
  ```
 Version 1 :avec lecteur SD
 Version 2 : avec Puce GSM
 ```
+
+⚠️ la protection de données personnelles vous impose de ne pas recupérer et reutiliser les données d'autrui sans autorisation ⚠️
 
 ![Boitier 3D](preview3D_box.png?raw=true "Boitier 3D")
 
@@ -24,9 +29,11 @@ Voici un schéma simple de fonctionnement:
 * 6 CPU en mode Sleep
 * 8 Reveil et boucle -> 1
 
-Afin de ne pas vider la batterie en 2 heures , Des fonction de sauvegarde de battery on été ajouté comme le temps maximun de 15sec d'allumage du GPS ( cas blocqué sous un tunnel).
+Afin de ne pas vider la batterie en 2 heures , des fonctions de sauvegardes de battery ont été ajoutées comme le temps maximun de 15 sec d'allumage du GPS ( ex: cas bloqué sous un tunnel, le gps ne trouvera jamais de position...).
+
+
 je vous invite a venir regarder mon tuto en français sur ce projet...
-et je prépare la Version 2 avec puce GSM.
+et je prépare la version 2 avec puce GSM.
 
 ### Requis Logiciel
 * [Arduino IDE](https://www.arduino.cc) - arduino IDE
@@ -61,14 +68,12 @@ Ca arrive
 en cas d'erreur ( access SD) la led Pin 13 clignotera rapidement et le programme stopera.
 
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-
-## Amelioration
+## Amelioration taille, autonomie...
 
 * Gestion date des fichier GPX
+* Version 2 puce GSM
+* Arduino en mode standalone ( sans port serie, regulateur...) 
+* Impression PCB et réduction de la taille du boitier 
 
 ## Consommation et batterie
 
