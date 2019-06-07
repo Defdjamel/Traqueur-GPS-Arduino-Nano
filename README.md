@@ -5,6 +5,8 @@
 Give the example
 ```
 
+![Boitier 3D](preview3D_box.png?raw=true "Boitier 3D")
+
 ## Bien commencer
 
 Ce programme a été codé sous l'arduino IDE utilisant des librarie open sources.
