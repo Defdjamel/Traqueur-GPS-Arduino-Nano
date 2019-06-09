@@ -203,7 +203,7 @@ if ( ( millis() / 1000 ) >  (startTimeGpsSec + DELAY_MAX_GPS_SEC ) ){//timeOutGp
          Serial.println(dateChar);
          
          char timeChar[32];
-         sprintf(timeChar, "%02d:%02d:%02d", t.hour(), t.minute(), t.second());
+         sprintf(timeChar, "%02d:%02d:%02d", t.hour() , t.minute(), t.second());
          Serial.println(timeChar);
          
          sprintf(fileName, "%02d%02d%02d.gpx", d.month(), d.day(), d.year());
