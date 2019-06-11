@@ -57,10 +57,7 @@ Controlleur charge batterie -> http://bit.ly/2WxujnU
 
 ### Schéma électronique et cablages
 
-
-```
-Ca arrive
-```
+![Schema ](TrackerGps_schema.png?raw=true "schema normalisé")
 
 
 ## Tests
