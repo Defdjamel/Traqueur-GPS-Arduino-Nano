@@ -4,7 +4,7 @@
 void modeWakeUp(bool state);
 
 /*
- * include
+ * includes
  */
 #include <SoftwareSerial.h>
 #include <SPI.h>

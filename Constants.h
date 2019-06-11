@@ -18,7 +18,6 @@ volatile int SLEEPING_TIME_MIN = 10;
 //XML GPX FILE
 int countPt = 0;
 const char * trackPt =  "<trkpt lat=\"%s\" lon=\"%s\" ><time>%s</time></trkpt>"  ;
-//const char  trackPt[] PROGMEM =  "<trkpt lat=\"%s\" lon=\"%s\" ><time>%s</time></trkpt>\n"  ;
 const char headerGpsFile[] PROGMEM = {"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?><trk><trkseg>"};
 const char footerGpsFile[] PROGMEM  = {"</trkseg></trk></gpx>"};
 
