@@ -43,6 +43,7 @@ et je prépare la version 2 avec puce GSM.
 Arduino Nano (at328/AT328P)->  lien : http://bit.ly/2wLw6Gq
 
 GPS NEO 6(M/G/C) -> lien: http://bit.ly/2Ix3Mx3
+
 Transitor NPN (ic max = 100mA) -> pack transistor :  https://www.banggood.com/custlink/3mmGP9TyV7
 
 Resistance 1kΩ -> pack resisstance https://www.banggood.com/custlink/33KK5Zfhtn
