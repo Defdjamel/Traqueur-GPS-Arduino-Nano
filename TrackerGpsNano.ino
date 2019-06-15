@@ -57,6 +57,7 @@ void initPowerSave(){
 
 //LED MANAGEMENT
 void errorLed(){
+   pinMode(LED_BUILTIN, OUTPUT);
   for (int i = 0 ; i < 100 ; i++) {
       digitalWrite(LED_BUILTIN, HIGH); 
       delay(100);
@@ -150,6 +151,7 @@ if (!myFile) {
 
 // the loop function runs over and over again forever
 void loop() {  
+
 if (isWakeUp == 0 ){//cyle = 8sec
   
     enterSleepCpu();

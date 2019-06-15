@@ -1,11 +1,11 @@
 //Hardware
-static const int RXPin =6, TXPin = 4;
+static const int GPSRXPin = 4 , GPSTXPin = 5;
 static const uint32_t GPSBaud = 9600;
 
 // The serial connection to the GPS module
-SoftwareSerial gpsSerial(TXPin, RXPin);
+SoftwareSerial gpsSerial(GPSTXPin ,GPSRXPin);
 
-const int chipSelect = 5;
+const int chipSelect = 6;//SD card select pin
 const int gpsPin = 8;
 
 const int  DEBUG_MODE  = 0 ;
