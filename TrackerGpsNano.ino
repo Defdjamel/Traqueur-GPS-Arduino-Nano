@@ -2,6 +2,7 @@
  * prototype class
  */
 void modeWakeUp(bool state);
+void errorLed();
 
 /*
  * includes
@@ -27,25 +28,24 @@ void setup() {
    gpsSerial.begin(GPSBaud);
    pinMode(LED_BUILTIN, OUTPUT);
    pinMode(gpsPin, OUTPUT);
-   setupWatchDogTimer();delay(100);
+   pinMode(GPSTXPin, INPUT_PULLUP);
 
-   initPowerSave();
-
-    //init state hardware wake up ( only gps)
-    modeWakeUp(true);
- 
-  //init SD CARD
-  if (!SD.begin(chipSelect)) {
+   //init SD CARD
+   if (!SD.begin(chipSelect)) {
     Serial.println(F("SD failed!"));
     errorLed();
-    while (1);
-  }
-  Serial.println(F("init ok."));
-  
-  //write testFile to sd card
-  testFile();
+   }
 
+   setupWatchDogTimer();delay(100);
+   initPowerSave();
+   
+   //init state hardware wake up ( only gps)
+   modeWakeUp(true);
  
+   Serial.println(F("init ok."));
+  
+   //write testFile to sd card
+   testFile();
 }
 
 void initPowerSave(){
@@ -57,11 +57,11 @@ void initPowerSave(){
 
 //LED MANAGEMENT
 void errorLed(){
-   pinMode(LED_BUILTIN, OUTPUT);
-  for (int i = 0 ; i < 100 ; i++) {
-      digitalWrite(LED_BUILTIN, HIGH); 
+   pinMode(13, OUTPUT);
+  for (int c = 0 ; c < 100 ; c++) {
+      digitalWrite(13, HIGH); 
       delay(100);
-      digitalWrite(LED_BUILTIN, LOW); 
+      digitalWrite(13, LOW); 
       delay(100); 
   }
 }

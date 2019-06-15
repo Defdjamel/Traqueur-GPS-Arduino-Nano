@@ -10,8 +10,8 @@ const int gpsPin = 8;
 
 const int  DEBUG_MODE  = 0 ;
 
-const unsigned long   DELAY_MAX_GPS_SEC  = 60 ;
-volatile int SLEEPING_TIME_MIN = 10;
+const unsigned long   DELAY_MAX_GPS_SEC  = 120 ;
+volatile int SLEEPING_TIME_MIN = 5;
 
 
    

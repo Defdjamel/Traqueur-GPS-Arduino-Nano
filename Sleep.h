@@ -15,7 +15,7 @@ void enterSleepCpu(void);
 // Watchdog Interrupt Service. This is executed when watchdog timed out.
 ISR(WDT_vect) {
   wd_counter ++;
-  Serial.println("WDT !!!");
+  Serial.println("WTG !!!");
   delay(10);
  
   if ((wd_counter * 8)  > (SLEEPING_TIME_MIN * 60) && isWakeUp == 0 ){//WAKE UP SYSTEME
