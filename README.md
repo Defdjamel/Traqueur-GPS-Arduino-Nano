@@ -40,19 +40,19 @@ et je prépare la version 2 avec puce GSM.
 * [TinyGps++](https://github.com/mikalhart/TinyGPSPlus) - TinyGps++
 
 ### Requis Hardware: 9,40 € sur aliexpress !
-Arduino Nano (at328/AT328P)->  lien : http://bit.ly/2wLw6Gq
+Arduino Nano (at328/AT328P)->  lien : http://bit.ly/2WKxqZE
 
-GPS NEO 6(M/G/C) -> lien: http://bit.ly/2Ix3Mx3
+GPS NEO 6(M/G/C) -> lien: http://bit.ly/31yFM5z
+
+Lecteur carte microSD -> lien: http://bit.ly/2KVJ1OA
+
+Batterie(1000maH recommandé) -> http://bit.ly/2Kmgdzf
+
+Controlleur charge batterie -> http://bit.ly/2x27eKV
 
 Transitor NPN (ic max = 100mA) -> pack transistor :  https://www.banggood.com/custlink/3mmGP9TyV7
 
-Resistance 1kΩ -> pack resisstance https://www.banggood.com/custlink/33KK5Zfhtn
-
-Lecteur carte microSD -> lien: http://bit.ly/2R2ewYd
-
-Batterie(1000maH recommandé) ->  http://bit.ly/31puy2X
-
-Controlleur charge batterie -> http://bit.ly/2WxujnU
+Resistance 1kΩ -> pack resistances https://www.banggood.com/custlink/33KK5Zfhtn
 
 
 ### Schéma électronique et cablages
