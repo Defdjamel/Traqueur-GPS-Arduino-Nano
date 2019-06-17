@@ -12,7 +12,7 @@ Version 2 : avec Puce GSM
 
 ⚠️ la protection de données personnelles vous impose de ne pas recupérer et reutiliser les données d'autrui sans autorisation ⚠️
 
-![Boitier 3D](preview3D_box.png?raw=true "Boitier 3D")
+![Boitier 3D](preview.jpg?raw=true "Boitier 3D")
 
 ## Bien commencer
 
