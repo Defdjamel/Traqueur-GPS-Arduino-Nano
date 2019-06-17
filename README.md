@@ -84,7 +84,7 @@ Mode actif:
 
 Mode Sleep: 
 ```
- Arduino : 3mAh 
+ Arduino : 0.3mAh 
  Gps: 0 mAh
  lecteur micro sd: 0.3 mA(pas de mode sleep dans cette version)
 ```
