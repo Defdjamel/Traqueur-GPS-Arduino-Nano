@@ -1,4 +1,4 @@
-# TrackerGPSArduinoNano V1
+# Traqueur GPS sur Arduino Nano V1
 Je débute dans la création d'objets connectés et j'aimerai partager ma création avec tout les bugs qu'il comporte :) !
 
 Toutes contributions , commentaires sont les bienvenus !
@@ -29,10 +29,9 @@ Voici un schéma simple de fonctionnement:
 * 6 CPU en mode Sleep
 * 8 Reveil et boucle -> 1
 
-Afin de ne pas vider la batterie en 2 heures , des fonctions de sauvegardes de battery ont été ajoutées comme le temps maximun de 15 sec d'allumage du GPS ( ex: cas bloqué sous un tunnel, le gps ne trouvera jamais de position...).
+Afin de ne pas vider la batterie en 2 heures , des fonctions de sauvegardes de batterie ont été ajoutées comme le temps maximun de 15 sec d'allumage du GPS ( ex: cas bloqué sous un tunnel, le gps ne trouvera jamais de position...).
 
-
-je vous invite a venir regarder mon tuto en français sur ce projet...
+je vous invite a venir regarder mon tuto sur youtube en français sur ce projet...
 et je prépare la version 2 avec puce GSM.
 
 ### Requis Logiciel
